@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- Dichiara che questo è un documento HTML5 -->
+<html lang="en"> <!-- Inizia il documento HTML e stabilisce che la lingua principale è inglese -->
+<head> <!-- Inizia la sezione head che contiene metadati e collegamenti esterni -->
+    <meta charset="UTF-8"> <!-- Stabilisce la codifica dei caratteri come UTF-8 per supportare caratteri speciali -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende il sito responsive sui dispositivi mobili -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pre-connette al server di Google Fonts per caricare i font più velocemente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pre-connette al CDN di Google Fonts con supporto CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet"> <!-- Carica il font personalizzato "WDXL Lubrifont TC" da Google Fonts -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Carica la libreria di icone Boxicons per gli elementi grafici -->
+    <link rel="icon" href="../Img/favicon_io/favicon.ico" type="image/x-icon"> <!-- Stabilisce l'icona che appare nella scheda del browser -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Collega il file CSS esterno per gli stili della pagina -->
+    <title>Calendar</title> <!-- Stabilisce il titolo che appare nella scheda del browser -->
+</head> <!-- Chiude la sezione head -->
+<body class="spaced-column"> <!-- Inizia il corpo della pagina con la classe CSS "spaced-column" -->
+    <div class="header"> <!-- Crea un contenitore per l'intestazione della pagina -->
+        <p id="subtitle"> Visca Barça</p> <!-- Crea un paragrafo con il motto del Barcelona -->
+        <a href="../Pages Login-Register/Log-in.html" target="_blank" class="login-container"> <!-- Crea un collegamento alla pagina di login che si apre in una nuova scheda -->
+            <i class='bx bx-user' ></i> <!-- Inserisce un'icona utente dalla libreria Boxicons -->
+            <p>Login</p> <!-- Testo "Login" accanto all'icona -->
+        </a> <!-- Chiude il collegamento di login -->
+    </div> <!-- Chiude il contenitore dell'intestazione -->
+    <nav> <!-- Inizia la barra di navigazione -->
+        <div class="logo"> <!-- Contenitore per il logo -->
+            <a href="../index.html"><img id="logo-image" src="../Img/Logo_scudo/FC-Barcelona scudo.png" alt="logo"></a> <!-- Collegamento che porta alla homepage con l'immagine del logo del Barcelona -->
+        </div> <!-- Chiude il contenitore del logo -->
+        <div class="menu"> <!-- Contenitore per il menu di navigazione -->
+            <a class="menu-item" href="../index.html">Home</a> <!-- Collegamento alla pagina principale -->
+            <a class="menu-item" href="./First-Team.html">First Team</a> <!-- Collegamento alla pagina della prima squadra -->
+            <a class="menu-item" href="./Legends.html">Legends</a> <!-- Collegamento alla pagina delle leggende della squadra-->
+        </div> <!-- Chiude il contenitore del menu -->
+    </nav> <!-- Chiude la barra di navigazione -->
+    <div class="content"> <!-- Contenitore per il contenuto principale -->
+        <h1>CALENDAR</h1> <!-- Titolo principale della pagina del calendario -->
+        <img src="../Img/Calendar/Calendar.jpg" alt="Calendar_img" > <!-- Immagine del calendario -->
+        <h3>There are no games nearby</h3> <!-- Sottotitolo che informa che non ci sono partite vicine -->
+    </div> <!-- Chiude il contenitore del contenuto principale -->
+    <footer class="footer-complete"> <!-- Inizia il piè di pagina -->
+        <div class="footer-container"> <!-- Contenitore principale del footer -->
+            <div class="footer-content"> <!-- Contenitore per il contenuto del footer -->
+                <div class="footer-section"> <!-- Prima sezione del footer -->
+                    <h3>About us</h3> <!-- Titolo della sezione "Chi siamo" -->
+                    <p>We are a company dedicated to providing the best digital solutions for your business. Innovation and quality in every project.</p> <!-- Descrizione dell'azienda -->
+                    <div class="social-icons"> <!-- Contenitore per le icone social -->
+                        <a href="#" class="social-icon">📘</a> <!-- Collegamento a Facebook (icona libro) -->
+                        <a href="#" class="social-icon">🐦</a> <!-- Collegamento a Twitter (icona uccello) -->
+                        <a href="#" class="social-icon">📷</a> <!-- Collegamento a Instagram (icona camera) -->
+                        <a href="#" class="social-icon">💼</a> <!-- Collegamento a LinkedIn (icona valigetta) -->
+                    </div> <!-- Chiude il contenitore delle icone social -->
+                </div> <!-- Chiude la prima sezione del footer -->
+                <div class="footer-section"> <!-- Seconda sezione del footer -->
+                    <h3>Quick Links</h3> <!-- Titolo per i collegamenti rapidi -->
+                    <ul> <!-- Lista dei collegamenti rapidi -->
+                        <li><a href="#">Home</a></li> <!-- Collegamento alla pagina principale -->
+                        <li><a href="#">Services</a></li> <!-- Collegamento ai servizi -->
+                        <li><a href="#">Portfolio</a></li> <!-- Collegamento al portfolio -->
+                        <li><a href="#">Blog</a></li> <!-- Collegamento al blog -->
+                        <li><a href="#">Contact</a></li> <!-- Collegamento ai contatti -->
+                    </ul> <!-- Chiude la lista dei collegamenti rapidi -->
+                </div> <!-- Chiude la seconda sezione del footer -->
+                <div class="footer-section"> <!-- Terza sezione del footer -->
+                    <h3>Services</h3> <!-- Titolo per i servizi -->
+                    <ul> <!-- Lista dei servizi -->
+                        <li><a href="#">Sviluppo Web</a></li> <!-- Servizio di sviluppo web -->
+                        <li><a href="#">Diseño UI/UX</a></li> <!-- Servizio di design UI/UX -->
+                        <li><a href="#">Marketing Digital</a></li> <!-- Servizio di marketing digitale -->
+                        <li><a href="#">Consultoría IT</a></li> <!-- Servizio di consulenza IT -->
+                        <li><a href="#">Soporte Técnico</a></li> <!-- Servizio di supporto tecnico -->
+                    </ul> <!-- Chiude la lista dei servizi -->
+                </div> <!-- Chiude la terza sezione del footer -->
+                <div class="footer-section"> <!-- Quarta sezione del footer -->
+                    <h3>Contact</h3> <!-- Titolo per i contatti -->
+                    <p>📍 Corso. Aea 123, Turin, Italia</p> <!-- Indirizzo dell'azienda con icona posizione -->
+                    <p>📞 +39 322 722 9441</p> <!-- Numero di telefono con icona telefono -->
+                    <p>✉️ salazarcaceres.benjamin@peano.it</p> <!-- Indirizzo email con icona busta -->
+                    <p>🕒 Mon - Fri: 9:00 - 18:00</p> <!-- Orari di apertura con icona orologio -->
+                </div> <!-- Chiude la quarta sezione del footer -->
+            </div> <!-- Chiude il contenitore del contenuto del footer -->
+            <div class="footer-bottom"> <!-- Sezione inferiore del footer -->
+                <p>&copy;2025 My Company. All rights reserved.</p> <!-- Copyright dell'azienda -->
+                <p> <!-- Paragrafo per i collegamenti legali -->
+                    <a href="#">Privacy Policy</a> |  <!-- Collegamento alla privacy policy -->
+                    <a href="#">Terms of Service</a> |  <!-- Collegamento ai termini di servizio -->
+                    <a href="#">Cookies</a> <!-- Collegamento alla policy sui cookies -->
+                </p> <!-- Chiude il paragrafo dei collegamenti legali -->
+            </div> <!-- Chiude la sezione inferiore del footer -->
+        </div> <!-- Chiude il contenitore principale del footer -->
+    </footer> <!-- Chiude il piè di pagina -->
+</body> <!-- Chiude il corpo della pagina -->
+</html> <!-- Chiude il documento HTML -->

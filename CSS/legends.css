@@ -1,0 +1,35 @@
+.content{
+    margin: 0 10px 1rem 10px; /* Imposta margini: 0 sopra/sotto, 10px ai lati, 1rem sotto */
+    padding: 0 2rem 2rem 2rem; /* Imposta padding: 0 sopra, 2rem ai lati e sotto */
+}
+.font-legends{
+    color: rgb(255, 255, 255); /* Imposta il colore del testo a bianco */
+}
+.legends-grid {
+    display: grid; /* Imposta il layout come griglia CSS */
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 colonne di uguale larghezza */
+    width: 100%; /* Imposta la larghezza al 100% del contenitore padre */
+}
+.legends-grid > :nth-child(odd){
+    margin-top: 5rem; /* Aggiunge margine superiore di 5rem agli elementi dispari */
+}
+.legends-item{
+    display: flex; /* Imposta il layout come flexbox */
+    flex-direction: column; /* Dispone gli elementi figli in colonna verticale */
+    align-items: center; /* Centra gli elementi figli orizzontalmente */
+}
+.legends-img{
+    height: 750px; /* Imposta l'altezza fissa a 750 pixel */
+    width: 35rem; /* Imposta la larghezza fissa a 35rem */
+    display: flex; /* Imposta il layout come flexbox */
+    align-items: center; /* Centra verticalmente il contenuto */
+    flex-direction: column; /* Dispone il contenuto in colonna verticale */
+}
+.legends-item img {
+    object-fit: contain; /* Mantiene le proporzioni dell'immagine senza ritagliarla */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center; /* Centra verticalmente il contenuto */
+    max-height: 750px; /* Imposta l'altezza massima a 750 pixel */
+    margin: auto; /* Centra automaticamente l'elemento nel suo contenitore */
+    background-color: rgb(255, 255, 255); /* Imposta lo sfondo dell'immagine a bianco */
+}

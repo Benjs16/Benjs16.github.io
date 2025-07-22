@@ -1,0 +1,146 @@
+:root{ /* Definisce le variabili CSS globali */
+    --primary800: #0e111b; /* Colore primario scuro per elementi di sfondo */
+    --primary500: #ffffff; /* Colore primario bianco per testi e bordi */
+    --primary400: #434e6a; /* Colore primario grigio-blu per elementi secondari */
+    --background: rgb(24, 23, 51); /* Colore di sfondo principale della pagina */
+}
+.wdxl-lubrifont-tc-regular { /* Classe per il font personalizzato */
+  font-family: "WDXL Lubrifont TC", sans-serif; /* Imposta il font family principale */
+  font-weight: 400; /* Peso del font normale */
+  font-style: normal; /* Stile del font normale (non corsivo) */
+}
+* { /* Selettore universale per tutti gli elementi */
+    margin: 0; /* Rimuove tutti i margini di default */
+}
+body { /* Stili per l'elemento body */
+    font-family: "WDXL Lubrifont TC", sans-serif; /* Font family per tutto il documento */    
+    margin: 0; /* Rimuove margini del body */
+    padding: 0; /* Rimuove padding del body */
+    display: flex; /* Imposta display flexbox */
+    margin-right: 3rem; /* Margine destro di 3rem */
+    justify-content: right; /* Allinea contenuto a destra */
+    align-items: center; /* Centra verticalmente gli elementi */
+    height: 100vh; /* Altezza piena del viewport */
+    background-color: var(--background); /* Colore di sfondo dalla variabile */
+    background-image:url(../Img/Background/BG_dsk.png); /* Immagine di sfondo */
+    background-position:left; /* Posiziona l'immagine a sinistra */
+    background-repeat: no-repeat; /* Non ripete l'immagine di sfondo */
+}
+.logo{ /* Stili per il contenitore del logo */
+    display: flex; /* Display flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    padding-bottom: 1.5rem; /* Padding inferiore di 1.5rem */
+}
+#logo-image{ /* Stili per l'immagine del logo */
+    height: 6.5rem; /* Altezza fissa di 6.5rem */
+}
+.login-container { /* Contenitore principale del modulo di login */  
+    padding: 40px; /* Padding interno di 40px */
+    border-radius: 10px; /* Bordi arrotondati di 10px */
+    box-shadow: 0 0 20px rgba(248, 242, 242, 0.1); /* Ombra esterna sottile */
+    width: 350px; /* Larghezza fissa di 350px */
+    backdrop-filter: blur(5px); /* Effetto blur dello sfondo */
+    background: transparent; /* Sfondo trasparente */
+    
+}
+.login-header { /* Intestazione del modulo di login */
+    text-align: center; /* Testo centrato */    
+    margin-bottom: 30px; /* Margine inferiore di 30px */
+}
+
+.login-header h1 { /* Titolo principale nell'intestazione */
+    color: var(--primary500); /* Colore del testo dalla variabile */
+    margin: 0; /* Rimuove margini */
+    font-size: 28px; /* Dimensione font di 28px */
+}
+.form-group { /* Gruppo di elementi del modulo */
+    margin-bottom: 20px; /* Margine inferiore di 20px */
+    backdrop-filter: blur(5px); /* Effetto blur dello sfondo */
+    position: relative; /* Posizionamento relativo per icone */
+}
+.form-group label { /* Etichette dei campi del modulo */
+    display: block; /* Display a blocco */
+    font-weight: bold; /* Testo in grassetto */
+    color: #44b448; /* Colore verde per le etichette */
+}
+.form-group input { /* Campi di input del modulo */
+    width: 100%; /* Larghezza piena */
+    padding: 12px; /* Padding interno di 12px */
+    border: 1.5px solid var(--primary500); /* Bordo bianco di 1.5px */
+    border-radius: 20px; /* Bordi molto arrotondati */
+    box-sizing: border-box; /* Include padding e bordi nella larghezza */
+    font-size: 16px; /* Dimensione font di 16px */
+    background-color: rgba(0, 0, 0, 0); /* Sfondo trasparente */
+    color: var(--primary500); /* Colore del testo bianco */
+    
+}
+.form-group input::placeholder{ /* Stili per il testo placeholder */
+    color: var(--primary500); /* Colore bianco per placeholder */
+}
+.form-group i{ /* Icone nei campi del modulo */
+    position: absolute; /* Posizionamento assoluto */
+    right: 20px; /* 20px dal bordo destro */
+    top: 50%; /* Al 50% dall'alto */
+    color: var(--primary500); /* Colore bianco */
+    text-align: center; /* Testo centrato */
+    transform: translatey(-50%); /* Centra verticalmente */
+    font-size: 20px; /* Dimensione font di 20px */
+}
+.form-group input:focus { /* Stili per input quando riceve focus */
+    border-color: var(--primary500); /* Colore bordo bianco al focus */
+    outline: none; /* Rimuove outline di default */
+}
+.btn { /* Stili per il pulsante principale */
+    background-color: var(--primary500); /* Sfondo bianco */
+    color: rgb(0, 0, 0); /* Testo nero */
+    padding: 12px; /* Padding di 12px */
+    border: none; /* Nessun bordo */
+    border-radius: 20px; /* Bordi arrotondati */
+    cursor: pointer; /* Cursore a puntatore */
+    width: 100%; /* Larghezza piena */
+    font-size: 16px; /* Dimensione font di 16px */
+    transition: 0.2s; /* Transizione di 0.2 secondi */
+}
+#remember-forgot{ /* Sezione "ricordami" e "password dimenticata" */
+    color: var(--primary500); /* Colore testo bianco */
+    margin-bottom: 15px; /* Margine inferiore di 15px */
+    font-size: 14px; /* Dimensione font piccola */
+    text-align: center; /* Testo centrato */
+    justify-content: space-between; /* Spazio uniforme tra elementi */  
+    display: flex; /* Display flexbox */
+    align-items: flex-end; /* Allinea elementi in basso */
+}
+#remember-forgot a{ /* Link nella sezione remember-forgot */
+    align-self: auto; /* Allineamento automatico */
+
+}
+#remember-forgot label input{ /* Checkbox nella sezione remember-forgot */
+    accent-color: var(--primary500); /* Colore personalizzato checkbox */
+    margin-right: 5px; /* Margine destro di 5px */
+}
+.btn:hover { /* Effetto hover sul pulsante */
+    background-color: var(--primary500); /* Mantiene sfondo bianco al hover */
+}
+#register{ /* Sezione link di registrazione */
+    text-align: center; /* Testo centrato */
+    margin-top: 20px; /* Margine superiore di 20px */
+    color: var(--primary500); /* Colore testo bianco */
+    font-size: 14px; /* Dimensione font piccola */
+    flex-direction: row; /* Direzione flex orizzontale */
+}
+#register a{ /* Link di registrazione */
+    text-decoration:solid; /* Decorazione testo solida */
+    font-weight: 600; /* Peso font semi-grassetto */
+}
+#register p a:hover{ /* Effetto hover sul link registrazione */
+    text-decoration: underline; /* Sottolineatura al hover */
+    
+}
+.links a { /* Stili generali per tutti i link */
+    color: var(--primary500); /* Colore bianco */
+    text-decoration: none; /* Nessuna decorazione di default */
+    font-size: 14px; /* Dimensione font piccola */
+}
+.links a:hover { /* Effetto hover per tutti i link */
+    text-decoration: underline; /* Sottolineatura al hover */
+}

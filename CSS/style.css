@@ -1,0 +1,226 @@
+:root{ /* Definisce le variabili CSS globali */
+    --primary800: #3498db; /* Colore primario blu per hover e accenti */
+    --primary500: #ffffff; /* Colore primario bianco per testi */
+    --primary400: #434e6a; /* Colore primario grigio-blu per elementi secondari */
+    --background1: #100f2c; /* Colore di sfondo principale scuro */
+    --background2:#181733; /* Colore di sfondo secondario per header */
+}
+.wdxl-lubrifont-tc-regular { /* Classe per il font personalizzato */
+  font-family: "WDXL Lubrifont TC", sans-serif; /* Imposta il font family principale */
+  font-weight: 400; /* Peso del font normale */
+  font-style: normal; /* Stile del font normale (non corsivo) */
+}
+* { /* Selettore universale per tutti gli elementi */
+    margin: 0; /* Rimuove tutti i margini di default */
+}
+body{ /* Stili per l'elemento body */
+    font-family: "WDXL Lubrifont TC", sans-serif; /* Font family per tutto il documento */
+    background-color: var(--background1) ; /* Colore di sfondo dalla variabile */
+    display: flex; /* Display flexbox */
+    flex-direction: column; /* Direzione colonna */
+    justify-content: space-between; /* Spazia elementi uniformemente */
+    margin-bottom: auto; /* Margine inferiore automatico */
+    background: linear-gradient(270deg, #9b0041 0, #9b0041 48%, #0018b4 52%, #0018b4); /* Gradiente di sfondo orizzontale */
+}
+h1{ /* Stili per titoli h1 */
+    font-size: 5rem; /* Dimensione font molto grande */
+    line-height: 104px; /* Altezza di riga */
+}
+h2{ /* Stili per titoli h2 */
+    font-size: 3rem; /* Dimensione font grande */
+    line-height: 56px; /* Altezza di riga */
+}
+h3{ /* Stili per titoli h3 */
+    font-size: 1.5rem; /* Dimensione font media */
+    line-height: 32px; /* Altezza di riga */
+}
+h4{ /* Stili per titoli h4 */
+    font-size: 1.25rem; /* Dimensione font medio-piccola */
+    line-height: 24px; /* Altezza di riga */
+}
+h1, /* Selettore multiplo per tutti i titoli */
+h2, /* Titoli h2 */
+h3, /* Titoli h3 */
+h4, /* Titoli h4 */
+h5, /* Titoli h5 */
+h6, /* Titoli h6 */
+p { /* Paragrafi */
+    color: var(--primary500); /* Colore bianco per tutti i testi */
+    font-weight: normal; /* Peso font normale */
+}
+.logo{ /* Classe per il logo */
+    font-size: 1.5rem; /* Dimensione font del logo */
+    line-height: 32px; /* Altezza di riga */
+}
+#logo-image{ /* ID per l'immagine del logo */
+    width: 6rem; /* Larghezza fissa */
+    object-fit: cover; /* Mantiene proporzioni tagliando se necessario */
+    display: block ; /* Display a blocco */
+}
+a, /* Link normali */
+a:visited, /* Link visitati */
+a:focus{ /* Link con focus */
+    text-decoration: none; /* Rimuove sottolineatura */
+    color: var(--primary500); /* Colore bianco */
+}
+.header{ /* Classe per l'header */
+    height: 3rem; /* Altezza fissa */
+    display: flex   ; /* Display flexbox */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: row; /* Direzione orizzontale */
+    justify-content: space-between; /* Spazio tra elementi */
+    background-color: var(--background2); /* Colore di sfondo dalla variabile */
+}
+#subtitle{ /* ID per il sottotitolo */
+    font-size: 18px; /* Dimensione font */
+    margin-left: 1.8rem; /* Margine sinistro */
+}
+.login-container i{ /* Icone nel contenitore login */
+    position: relative; /* Posizionamento relativo */
+    color: white; /* Colore bianco */
+    font-size: 18px; /* Dimensione font */
+}
+.login-container{ /* Contenitore del pulsante login */
+    background-image: linear-gradient(90deg, #8c1a17, #cd122d); /* Gradiente rosso */
+    color: rgb(0, 0, 0); /* Testo nero */
+    padding: 12px; /* Padding interno */
+    border: none; /* Nessun bordo */
+    border-radius: 20px; /* Bordi arrotondati */
+    cursor: pointer; /* Cursore a puntatore */
+    height: 18px; /* Altezza fissa */
+    width: 5rem; /* Larghezza fissa */
+    font-size: 18px; /* Dimensione font */
+    transition: 0.2s; /* Transizione di 0.2 secondi */
+    display: flex; /* Display flexbox */
+    flex-direction: row; /* Direzione orizzontale */
+    justify-content: space-around; /* Spazio uniforme */
+    text-align: center; /* Testo centrato */
+    margin-right: 2rem; /* Margine destro */
+}
+nav .logo{ /* Logo nella navigazione */
+    font-weight: bold; /* Testo in grassetto */
+    color: var(--primary500); /* Colore bianco */
+    position: relative; /* Posizionamento relativo */
+}
+nav .menu{ /* Menu di navigazione */
+    display: flex; /* Display flexbox */
+    width: 40%; /* Larghezza del 40% */
+    justify-content: space-around; /* Spazio uniforme tra elementi */
+    flex-direction: row; /* Direzione orizzontale */
+    font-size: 19px; /* Dimensione font */
+}
+nav { /* Elemento di navigazione principale */
+    display: flex; /* Display flexbox */
+    height: 80px; /* Altezza fissa */
+    flex-direction: row; /* Direzione orizzontale */
+    justify-content: space-between; /* Spazio tra elementi */
+    align-items: center; /* Centra verticalmente */
+    background-color: var(--background1); /* Colore di sfondo */
+    padding:0 1rem 0 1rem; /* Padding orizzontale */
+}
+.active { /* Classe per elemento attivo */
+    font-weight: bold; /* Testo in grassetto */
+}
+.content { /* Contenitore principale del contenuto */
+    display: flex; /* Display flexbox */
+    flex-direction: column; /* Direzione colonna */
+    align-items: center; /* Centra orizzontalmente */
+    justify-content: center; /* Centra verticalmente */
+    background-color: var(--background1); /* Colore di sfondo */
+    margin-bottom: 1rem; /* Margine inferiore */
+}
+.main-image { /* Immagine principale */
+    width: 100%; /* Larghezza piena */
+    height: 400px; /* Altezza fissa */
+    object-fit: cover; /* Mantiene proporzioni */
+    display: block; /* Display a blocco */
+}
+.title-block{ /* Blocco del titolo */
+    width: 100%; /* Larghezza piena */
+    margin-top: 5rem; /* Margine superiore */
+    margin-bottom: 5rem; /* Margine inferiore */
+}
+.title-block h1{ /* H1 nel blocco titolo */
+    margin-bottom: 1rem; /* Margine inferiore */
+}
+.title-block h3{ /* H3 nel blocco titolo */
+    letter-spacing: 3px; /* Spaziatura tra lettere */
+    font-weight: bold; /* Testo in grassetto */
+}
+.footer-complete { /* Footer completo */
+    background: var(--background1); /* Colore di sfondo */
+    color: white; /* Colore testo bianco */
+    padding: 3rem 0 1rem; /* Padding verticale */
+    color: var(--primary500); /* Colore dalla variabile */
+    position: relative; /* Posizionamento relativo */
+    background-color: var(--background1); /* Colore di sfondo ripetuto */
+    margin-bottom: 1rem; /* Margine inferiore */
+}
+.footer-container { /* Contenitore del footer */
+    max-width: 1200px; /* Larghezza massima */
+    margin: 0 auto; /* Centrato orizzontalmente */
+    padding: 0 2rem; /* Padding orizzontale */
+}
+.footer-content { /* Contenuto del footer */
+    display: grid; /* Display grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colonne responsive */
+    gap: 2rem; /* Spazio tra elementi grid */
+    margin-bottom: 2rem; /* Margine inferiore */
+}
+.footer-section h3 { /* Titoli nelle sezioni footer */
+    margin-bottom: 1rem; /* Margine inferiore */
+    color: #3498db; /* Colore blu */
+    font-size: 1.2rem; /* Dimensione font */
+}
+.footer-section p, /* Paragrafi nelle sezioni footer */
+.footer-section a { /* Link nelle sezioni footer */
+    color: var(--primary500); /* Colore bianco */
+    text-decoration: none; /* Nessuna decorazione */
+    line-height: 1.8; /* Altezza di riga */
+    transition: color 0.3s ease; /* Transizione del colore */
+}
+.footer-section a:hover { /* Hover sui link del footer */
+    color: var(--primary800); /* Colore blu al hover */
+}
+.footer-section ul { /* Liste nelle sezioni footer */
+    list-style: none; /* Nessun punto elenco */
+    display: flex; /* Display flexbox */
+    flex-direction: column; /* Direzione colonna */
+    align-items: start; /* Allinea a sinistra */
+    padding-left: 0; /* Nessun padding sinistro */
+}
+.footer-section ul li { /* Elementi lista nel footer */
+    margin-bottom: 0.5rem; /* Margine inferiore */
+    width: auto; /* Larghezza automatica */
+}
+.social-icons { /* Contenitore icone social */
+    display: flex; /* Display flexbox */
+    gap: 1rem; /* Spazio tra icone */
+    margin-top: 1rem; /* Margine superiore */
+}
+.social-icon { /* Singola icona social */
+    width: 40px; /* Larghezza fissa */
+    height: 40px; /* Altezza fissa */
+    background: #3498db; /* Sfondo blu */
+    border-radius: 50%; /* Forma circolare */
+    display: flex; /* Display flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    color: white; /* Colore bianco */
+    text-decoration: none; /* Nessuna decorazione */
+    transition: all 0.3s ease; /* Transizione completa */
+}
+.social-icon:hover { /* Hover sulle icone social */
+    background: #2980b9; /* Sfondo blu scuro */
+    transform: translateY(-3px); /* Movimento verso l'alto */
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4); /* Ombra */
+}
+.footer-bottom { /* Parte inferiore del footer */
+    border-top: 1px solid #34495e; /* Bordo superiore */
+    padding-top: 1rem; /* Padding superiore */
+    text-align: center; /* Testo centrato */
+    color: #95a5a6; /* Colore grigio chiaro */
+}
+.footer-bottom p { /* Paragrafi nella parte inferiore */
+     margin-bottom: 0.5rem; /* Margine inferiore */
+}

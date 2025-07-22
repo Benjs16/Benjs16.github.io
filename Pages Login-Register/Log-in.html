@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- Dichiara che questo è un documento HTML5 -->
+<html lang="en"> <!-- Inizia il documento HTML e stabilisce che la lingua principale è inglese -->
+<head> <!-- Inizia la sezione head che contiene metadati e collegamenti esterni -->
+    <meta charset="UTF-8"> <!-- Stabilisce la codifica dei caratteri come UTF-8 per supportare caratteri speciali -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende il sito responsivo per dispositivi mobili -->
+    <link rel="stylesheet" href="../CSS/register-logIn.css"> <!-- Collegamento al file CSS per lo stile -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pre-connessione per velocizzare il caricamento dei font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pre-connessione crossorigin per Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet"> <!-- Importa il font personalizzato -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Libreria di icone Boxicons -->
+    <link rel="icon" href="../Img/favicon_io/favicon.ico" type="image/x-icon"> <!-- Favicon del sito -->
+    <title>Log In</title> <!-- Titolo della pagina che appare nella scheda del browser -->
+</head> <!-- Fine della sezione head -->
+<body> <!-- Inizio del corpo del documento -->
+    <div class="content"> <!-- Contenitore principale della pagina -->
+        <div class="logo"> <!-- Sezione contenitore per il logo -->
+                <img id="logo-image" src="../Img/Logo_scudo/FC-Barcelona scudo.png" alt="logo"> <!-- Immagine del logo del Barcellona con ID e testo alternativo -->
+        </div> <!-- Fine del contenitore logo -->
+        <div class="login-container"> <!-- Contenitore principale del modulo di login -->
+            <div class="login-header"> <!-- Intestazione del modulo di login -->
+                <h1>Log in</h1> <!-- Titolo principale del modulo di accesso -->
+            </div> <!-- Fine dell'intestazione -->
+            <form> <!-- Inizio del modulo HTML per raccogliere i dati di login -->
+                <div class="form-group"> <!-- Primo gruppo di campi del modulo per username -->
+                    <label for="username"></label> <!-- Etichetta vuota collegata al campo username -->
+                    <input type="text" id="username" name="username" placeholder="Username" required> <!-- Campo di input testuale per l'username, obbligatorio -->
+                    <i class='bx bxs-user' ></i> <!-- Icona utente dalla libreria Boxicons -->
+                </div> <!-- Fine del gruppo username -->
+                <div class="form-group"> <!-- Secondo gruppo di campi del modulo per password -->
+                    <label for="password"></label> <!-- Etichetta vuota collegata al campo password -->
+                    <input type="password" id="password" name="password" placeholder="Password" required> <!-- Campo di input password nascosta, obbligatorio -->
+                    <i class='bx bxs-lock-alt' ></i> <!-- Icona lucchetto dalla libreria Boxicons -->
+                </div> <!-- Fine del gruppo password -->
+                <div class="links" id="remember-forgot"> <!-- Contenitore per opzioni "ricordami" e "password dimenticata" -->
+                    <label ><input type="checkbox"> Remember me </label> <!-- Checkbox per ricordare l'utente con etichetta -->
+                    <a href="#">Forgot the password?</a> <!-- Link per recuperare la password dimenticata -->   
+                </div> <!-- Fine della sezione opzioni -->
+                <button type="submit" class="btn">Login</button> <!-- Pulsante di invio del modulo con classe CSS -->
+            </form> <!-- Fine del modulo -->
+            <div class="links" id="register"> <!-- Sezione per il link di registrazione -->
+                <p>Don't have an account? <!-- Paragrafo con testo -->  
+                <a href="./Register.html">Register</a></p> <!-- Link alla pagina di registrazione -->
+            </div> <!-- Fine della sezione registrazione -->
+        </div> <!-- Fine del contenitore login -->
+    </div> <!-- Fine del contenitore principale -->
+</body> <!-- Fine del corpo del documento -->
+</html> <!-- Fine del documento HTML -->

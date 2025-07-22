@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Dichiara che questo è un documento HTML5 -->
+<html lang="en"> <!-- Inizia il documento HTML e stabilisce che la lingua principale è inglese -->
+<head> <!-- Inizia la sezione head che contiene metadati e collegamenti esterni -->
+    <meta charset="UTF-8"> <!-- Stabilisce la codifica dei caratteri come UTF-8 per supportare caratteri speciali -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende il sito responsive sui dispositivi mobili -->
+    <link rel="stylesheet" href="../CSS/register-logIn.css"> <!-- Collega il file CSS specifico per le pagine di registrazione e login -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pre-connette al server di Google Fonts per caricare i font più velocemente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pre-connette al CDN di Google Fonts con supporto CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet"> <!-- Carica il font personalizzato "WDXL Lubrifont TC" da Google Fonts -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Carica la libreria di icone Boxicons per gli elementi grafici -->
+    <link rel="icon" href="../Img/favicon_io/favicon.ico" type="image/x-icon"> <!-- Stabilisce l'icona che appare nella scheda del browser -->
+    <title>Register</title> <!-- Stabilisce il titolo che appare nella scheda del browser -->
+</head> <!-- Chiude la sezione head -->
+<body> <!-- Inizia il corpo della pagina senza classi CSS -->
+    <div class="content"> <!-- Contenitore principale per tutto il contenuto della pagina -->
+        <div class="logo"> <!-- Contenitore per il logo -->
+                <img id="logo-image" src="../Img/Logo_scudo/FC-Barcelona scudo.png" alt="logo"> <!-- Immagine del logo del Barcelona -->
+        </div> <!-- Chiude il contenitore del logo -->
+        <div class="login-container"> <!-- Contenitore principale per il modulo di registrazione -->
+            <div class="login-header"> <!-- Contenitore per l'intestazione del modulo -->
+                <h1>Register</h1> <!-- Titolo principale del modulo di registrazione -->
+            </div> <!-- Chiude il contenitore dell'intestazione -->
+            <form> <!-- Inizia il modulo di registrazione -->
+                <div class="form-group"> <!-- Primo gruppo di elementi del modulo -->
+                    <label for="email"></label> <!-- Etichetta vuota per il campo email -->
+                    <input type="email" id="email" name="email" placeholder="Email" required> <!-- Campo di input per l'email con validazione obbligatoria -->
+                    <i class='bx bxs-envelope' ></i> <!-- Icona di una busta per rappresentare l'email -->
+                </div> <!-- Chiude il primo gruppo del modulo -->
+                <div class="form-group"> <!-- Secondo gruppo di elementi del modulo -->
+                    <label for="username"></label> <!-- Etichetta vuota per il campo username -->
+                    <input type="text" id="username" name="username" placeholder="Username" required> <!-- Campo di input per il nome utente con validazione obbligatoria -->
+                    <i class='bx bxs-user' ></i> <!-- Icona di un utente per rappresentare il nome utente -->
+                </div> <!-- Chiude il secondo gruppo del modulo -->
+                <div class="form-group"> <!-- Terzo gruppo di elementi del modulo -->
+                    <label for="password"></label> <!-- Etichetta vuota per il campo password -->
+                    <input type="password" id="password" name="password" placeholder="Password" required> <!-- Campo di input per la password con validazione obbligatoria -->
+                    <i class='bx bxs-lock-alt' ></i> <!-- Icona di un lucchetto per rappresentare la password -->
+                </div> <!-- Chiude il terzo gruppo del modulo -->
+                <button type="submit" class="btn">Register</button> <!-- Pulsante per inviare il modulo di registrazione -->
+            </form> <!-- Chiude il modulo di registrazione -->
+            <div class="links" id="register"> <!-- Contenitore per i collegamenti aggiuntivi -->
+                <p>Already have an account?    <!-- Testo che chiede se l'utente ha già un account -->
+                <a href="./Log-in.html">Log in</a></p> <!-- Collegamento alla pagina di login -->
+            </div> <!-- Chiude il contenitore dei collegamenti -->
+        </div> <!-- Chiude il contenitore principale del modulo -->
+    </div> <!-- Chiude il contenitore principale del contenuto -->
+</body> <!-- Chiude il corpo della pagina -->
+</html> <!-- Chiude il documento HTML -->

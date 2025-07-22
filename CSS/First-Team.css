@@ -1,0 +1,65 @@
+.content{ /* Selettore per il contenitore principale del contenuto */
+    display: block; /* Imposta il display come blocco (comportamento predefinito per div) */
+    margin: 0 0.5rem 1rem 0.5rem; /* Margini: 0 sopra, 0.5rem destra, 1rem sotto, 0.5rem sinistra */
+    align-content: center; /* Allinea il contenuto al centro (funziona con flexbox/grid) */
+}
+#title{ /* Selettore ID per l'elemento con id "title" */
+    display: flex; /* Imposta il display come flexbox per il controllo dell'allineamento */
+    justify-content: center; /* Centra orizzontalmente il contenuto lungo l'asse principale */
+    
+}
+.Team{ /* Selettore per il contenitore della squadra */
+    display: block; /* Imposta il display come blocco (comportamento normale di div) */
+    
+}
+.position-section { /* Selettore per ogni sezione di posizione (portieri, difensori, etc.) */
+    background: rgba(255, 255, 255, 0.1); /* Sfondo bianco semi-trasparente con opacità 10% */
+    border-radius: 15px; /* Bordi arrotondati con raggio di 15 pixel */
+    padding: 25px; /* Spaziatura interna di 25 pixel su tutti i lati */
+    margin-bottom: 30px; /* Margine inferiore di 30 pixel per separare le sezioni */
+    backdrop-filter: blur(10px); /* Effetto di sfocatura dello sfondo dietro l'elemento */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordo bianco semi-trasparente con opacità 20% */
+    margin:  1rem; /* Margine di 1rem su tutti i lati (sovrascrive margin-bottom) */
+}
+.position-title { /* Selettore per il titolo di ogni posizione */
+    color: antiquewhite; /* Colore del testo bianco antico */
+    font-size: 1.8em; /* Dimensione del font 1.8 volte la dimensione base */
+    font-weight: bold; /* Peso del font in grassetto */
+    margin-bottom: 20px; /* Margine inferiore di 20 pixel */
+    display: flex; /* Display flexbox per allineare emoji e testo */
+    align-items: center; /* Allinea verticalmente gli elementi al centro */
+    gap: 10px; /* Spazio di 10 pixel tra gli elementi flex (emoji e testo) */
+}
+.players-grid { /* Selettore per la griglia dei giocatori */
+    display: grid; /* Imposta il display come CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colonne responsive: minimo 250px, massimo 1fr, si adattano automaticamente */
+    gap: 20px; /* Spazio di 20 pixel tra gli elementi della griglia */
+}
+.player { /* Selettore per ogni singolo giocatore */
+    background: rgba(255, 255, 255, 0.1); /* Sfondo bianco semi-trasparente con opacità 10% */
+    border-radius: 10px; /* Bordi arrotondati con raggio di 10 pixel */
+    padding: 15px; /* Spaziatura interna di 15 pixel su tutti i lati */
+    text-align: center; /* Allinea il testo al centro */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordo bianco semi-trasparente con opacità 20% */
+    transition: transform 0.3s ease; /* Transizione fluida per la trasformazione in 0.3 secondi */
+}
+.player:hover { /* Pseudo-classe per l'effetto hover sui giocatori */
+    transform: translateY(-5px); /* Sposta l'elemento verso l'alto di 5 pixel quando si passa sopra */
+    background: rgba(255, 255, 255, 0.2); /* Cambia lo sfondo aumentando l'opacità al 20% */
+}
+.player img { /* Selettore per le immagini dei giocatori */
+    height: 10rem; /* Altezza fissa di 10rem (160px circa) */
+    border-radius: 50%; /* Bordi arrotondati al 50% per creare forma circolare */
+    margin: 0 auto 15px; /* Margini: 0 sopra/sotto, auto ai lati per centrare, 15px sotto */
+    font-size: 12px; /* Dimensione del font 12 pixel (probabilmente per testo alternativo) */
+    color: rgba(255, 255, 255, 0.7); /* Colore bianco semi-trasparente con opacità 70% */
+    
+}
+.player-name { /* Selettore per i nomi dei giocatori */
+    font-size: 1.1em; /* Dimensione del font 1.1 volte la dimensione base */
+    font-weight: bold; /* Peso del font in grassetto */
+    margin: 0; /* Rimuove tutti i margini predefiniti */
+}
+.emoji { /* Selettore per le emoji nelle sezioni delle posizioni */
+    font-size: 1.5em; /* Dimensione del font 1.5 volte la dimensione base per rendere le emoji più grandi */
+}
